@@ -1,7 +1,7 @@
 ##### Deux solutions MDM :
 
 * Microsoft Intune
-* NinjaOne
+* Knox Manage (Samsung)
 
 
 
@@ -17,6 +17,8 @@ Solution MDM intégrée au Microsoft 365 et Azure AD qui propose une gestion cen
 * Large couverture multiplateforme (prend en charge les OS les plus utilisés)
 * Capacités de sécurité et conformité avancées
 
+
+
 ###### Inconvénients :
 
 * Mise en place initiale complexe
@@ -26,33 +28,34 @@ Solution MDM intégrée au Microsoft 365 et Azure AD qui propose une gestion cen
 
 
 
-##### Headwind MDM
 
 
 
-Solution MDM gratuite et open source, orientée gestion des appareils Android. Elle permet une gestion centralisée des terminaux, le déploiement d’applications, la configuration des politiques de sécurité, et le verrouillage ou l’effacement à distance des appareils. Headwind MDM est légère et simple à déployer, adaptée aux petites et moyennes organisations qui recherchent une solution sans licence payante.
 
-##### 
+
+
+##### Knox Manage (Samsung)
+
+
+
+Solution MDM professionnelle de Samsung permettant la gestion centralisée des appareils mobiles (Android, iOS, Windows), avec un fort accent sur la sécurité et le contrôle à distance.
+
+
 
 ###### Avantages :
 
-##### 
+* Gestion complète multi-OS
+* Sécurité avancée
+* Intégration optimisée avec les appareils Samsung
+* Support professionnel
 
-* Gratuit et open source, pas de coût de licence
-* Déploiement rapide et simple pour les flottes Android
-* Gestion des applications et politiques à distance
-* Interface légère et facile à prendre en main
 
-##### 
 
 ###### Inconvénients :
 
-
-
-* Limité à Android (pas de support officiel iOS ou Windows)
-* Fonctionnalités plus basiques que des solutions commerciales comme Intune
-* Support communautaire (pas d’assistance officielle)
-
+* Solution payante
+* Plus complexe à configurer
+* Fonctionnalités maximales surtout sur Samsung
 
 
 
@@ -60,16 +63,17 @@ Solution MDM gratuite et open source, orientée gestion des appareils Android. E
 
 ##### Tableau comparatif
 
-|Catégories|Microsoft Intune|Headwind MDM|
+|Catégories|Microsoft Intune|Knox Manage (Samsung)|
 |-|-|-|
-|**Architecture**|Cloud Microsoft Natif|SaaS cloud open source (ou auto-hébergé)|
-|**Gestion des Identités**|Intégration native et profonde avec Microsoft Azure.|Gestion des appareils via comptes locaux ou LDAP, sans intégration complète Azure AD|
-|**Déploiement**|Autopilot (Windows), Apple Business Manager (ADE), Android Enterprise.|Portail web pour Android, installation via APK ou QR code|
-|**Sécurité**|Accès conditionnel (ex: interdire Outlook si l'OS n'est pas à jour).|Verrouillage à distance, effacement de données, gestion des permissions Android|
-|**Gestion applicative**|Déploiement granulaire (MAM) : Word, Excel, etc., avec protection des données internes.|Déploiement d’APK et configuration de politiques Android simples|
-|**Facilité d'usage**|Complexe : nécessite des compétences pour une bonne configuration.|Interface simple et intuitive, facile à prendre en main même sans expertise MDM|
-|**Points forts**|Intégration totale avec la suite Office|Gratuit, open source, déploiement rapide sur Android|
-|**Inconvénients**|Interface lourde pour de petites tâches|Limité à Android, fonctionnalités moins avancées, support communautaire|
+|**Architecture**|Cloud Microsoft Natif|SaaS cloud propriétaire (hébergé par Samsung)|
+|**Gestion des Identités**|Intégration native et profonde avec Microsoft Azure.|Intégration possible avec annuaires (LDAP/AD), moins poussée qu’Azure AD|
+|**Déploiement**|Autopilot (Windows), Apple Business Manager (ADE), Android Enterprise.|Déploiement via portail web, QR code, Knox Mobile Enrollment|
+|**Sécurité**|Accès conditionnel (ex: interdire Outlook si l'OS n'est pas à jour).|Verrouillage, effacement à distance, mode kiosque, sécurité renforcée Knox|
+|**Gestion applicative**|Déploiement granulaire (MAM) : Word, Excel, etc., avec protection des données internes.|Déploiement d’apps (APK, Google Play), gestion des politiques|
+|**Facilité d'usage**|Complexe : nécessite des compétences pour une bonne configuration.|Interface simple et rapide à prendre en main|
+|**Points forts**|Intégration totale avec la suite Office|Optimisé pour appareils Samsung, sécurité élevée, support pro|
+|**Inconvénients**|Interface lourde pour de petites tâches|Moins performant hors appareils Samsung|
+|**Prix**|6.90€ HT / utilisateur, modules complémentaires en options de 1€ à 5€/HT|Licence par appareil (tarification sur demande) -> besoin d'acheter la suite Knox|
 
 
 
