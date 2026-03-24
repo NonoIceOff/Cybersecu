@@ -26,20 +26,33 @@ Solution MDM intégrée au Microsoft 365 et Azure AD qui propose une gestion cen
 
 
 
-##### NinjaOne
+##### Headwind MDM
 
-Solution MDM robuste orientée gestion des appareils mobiles avec une plateforme unifiée permettant de gérer Android, iOS et autres terminaux depuis un seul tableau de bord. Elle propose une gestion centralisée des appareils, une fonctionnalité de déploiement des applications, des politiques à grande échelle, une gestion de verrouillage/effacement à distance et de restriction des fonctions des appareils pour renforcer la conformité et la sécurité.
+
+
+Solution MDM gratuite et open source, orientée gestion des appareils Android. Elle permet une gestion centralisée des terminaux, le déploiement d’applications, la configuration des politiques de sécurité, et le verrouillage ou l’effacement à distance des appareils. Headwind MDM est légère et simple à déployer, adaptée aux petites et moyennes organisations qui recherchent une solution sans licence payante.
+
+##### 
 
 ###### Avantages :
 
-* Grande compatibilité des appareils (Android et Apple) et gestion unifiée sur une seule plateforme avec surveillance, politiques et actions centralisées.
-* Fonctions de sécurité fortes avec verrouillage, effacement à distance, réinitialisation de code d’accès et restrictions des fonctionnalités.
-* Déploiement et enrôlement rapides des appareils, avec gestion des applications et des stratégies sur toute la flotte.
+##### 
+
+* Gratuit et open source, pas de coût de licence
+* Déploiement rapide et simple pour les flottes Android
+* Gestion des applications et politiques à distance
+* Interface légère et facile à prendre en main
+
+##### 
 
 ###### Inconvénients :
 
-* Les fonctionnalités avancées peuvent être perçues comme complexes pour des équipes très restreintes ou sans expérience MDM.
-* Solution intégrée à une plateforme plus large, ce qui peut nécessiter une adaptation ou formation pour exploiter pleinement toutes les capacités.
+
+
+* Limité à Android (pas de support officiel iOS ou Windows)
+* Fonctionnalités plus basiques que des solutions commerciales comme Intune
+* Support communautaire (pas d’assistance officielle)
+
 
 
 
@@ -47,16 +60,16 @@ Solution MDM robuste orientée gestion des appareils mobiles avec une plateforme
 
 ##### Tableau comparatif
 
-|Catégories|Microsoft Intune|NinjaOne (MDM)|
+|Catégories|Microsoft Intune|Headwind MDM|
 |-|-|-|
-|**Architecture**|Cloud Microsoft Natif|Saas cloud unifié|
-|**Gestion des Identités**|Intégration native et profonde avec Microsoft Azure.|Intégration via connecteurs, mais orientée gestion de flotte par terminaux.|
-|**Déploiement**|Autopilot (Windows), Apple Business Manager (ADE), Android Enterprise.|Via portail, QR code ou intégration Apple/Google.|
-|**Sécurité**|Accès conditionnel (ex: interdire Outlook si l'OS n'est pas à jour).|Verrouillage, effacement à distance et réinitialisation de code ultra-rapides.|
-|**Gestion applicative**|Déploiement granulaire (MAM) : Word, Excel, etc., avec protection des données internes.|Distribution d'apps simplifiée et gestion des politiques sur toute la flotte en masse.|
-|**Facilité d'usage**|Complexe : nécessite des compétences pour une bonne configuration.|Facile : interface moderne, prise en main rapide même sans compétences particulières.|
-|**Points forts**|Intégration totale avec la suite Office|Déploiement rapide|
-|**Inconvénients**|Interface lourde pour de petites tâches|Contrôle limité sur les applications|
+|**Architecture**|Cloud Microsoft Natif|SaaS cloud open source (ou auto-hébergé)|
+|**Gestion des Identités**|Intégration native et profonde avec Microsoft Azure.|Gestion des appareils via comptes locaux ou LDAP, sans intégration complète Azure AD|
+|**Déploiement**|Autopilot (Windows), Apple Business Manager (ADE), Android Enterprise.|Portail web pour Android, installation via APK ou QR code|
+|**Sécurité**|Accès conditionnel (ex: interdire Outlook si l'OS n'est pas à jour).|Verrouillage à distance, effacement de données, gestion des permissions Android|
+|**Gestion applicative**|Déploiement granulaire (MAM) : Word, Excel, etc., avec protection des données internes.|Déploiement d’APK et configuration de politiques Android simples|
+|**Facilité d'usage**|Complexe : nécessite des compétences pour une bonne configuration.|Interface simple et intuitive, facile à prendre en main même sans expertise MDM|
+|**Points forts**|Intégration totale avec la suite Office|Gratuit, open source, déploiement rapide sur Android|
+|**Inconvénients**|Interface lourde pour de petites tâches|Limité à Android, fonctionnalités moins avancées, support communautaire|
 
 
 
